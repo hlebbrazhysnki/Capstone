@@ -1,0 +1,45 @@
+body{
+    background-image: url("./imgs/cincy.jpg");
+    background-position:center;
+    background-size:2600px;
+    background-attachment: fixed;
+}
+
+.container{
+    background-color: white;
+    border:1px black solid;
+    padding: 20px;
+    float:left;
+    border-radius: 10px;
+  }
+
+.category-title{
+    text-align: center;
+}
+
+.category-img{
+    width: 300px;
+    width:100%;
+    border:1px black solid;
+    border-radius: 10px;
+}
+
+.categories{
+margin:550px 10px 0px 10px;
+}
+.center{
+    text-align: center;
+}
+.title{
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 10px;
+}
+@media(max-width:1440px){
+
+}
+
+@media (max-width:575px){
+
+
+}
