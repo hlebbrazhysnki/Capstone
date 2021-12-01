@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import placeholder from './imgs/placeholder.png'
 
-
+/*HOME PAGE PLACEHOLDER*/
 
 
 function App() {
