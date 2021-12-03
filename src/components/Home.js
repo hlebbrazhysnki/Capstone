@@ -1,6 +1,7 @@
 import React from 'react'
-import "./style.css";
-import placeholder from './imgs/placeholder.png'
+import "../style.css";
+import placeholder from '../imgs/placeholder.png'
+
 
 
 

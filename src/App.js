@@ -1,18 +1,30 @@
 import './App.css';
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
+import React, { Component } from 'react'
+import Navbar from "./components/Navbar"
+import Footer from './components/Footer';
+import { BrowserRouter, Route, Switch } from "react-router-dom"
+import About from './components/About'
+// import Contact from './components/Contact'
+import Home from './components/Home'
 
 
-function App() {
-  return (
-    <div className="App"> 
-    <Navbar />
-    <br />
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, et. Sapiente, delectus quasi necessitatibus blanditiis at provident, recusandae, velit laudantium assumenda odio fuga error ex! Fuga veniam itaque rem deserunt provident ducimus dicta cupiditate quod cumque? Pariatur ea maxime odit temporibus, cupiditate quia soluta rem.
-    <br />
-    <Footer />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+        <Route path='/' component={ Home } />
+        <Route path='/about' component={About} />
+        {/* <Route path='/contact' component={ Contact } /> */}
+       </Switch>
+        <Footer/>
+        
+     </BrowserRouter>
+    
+     
+    )
+  }
 }
+export default App
 
-export default App;
