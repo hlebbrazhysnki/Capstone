@@ -1,5 +1,5 @@
 const express = require( 'express' );
-const cors = require( 'cors' );
+const cors = require( 'cors' );                 // a system transmitting http headers
 const mongoose = require( 'mongoose' );         // connect to mongoDb 
 const path = require( 'path' );
 
@@ -34,6 +34,22 @@ if ( process.env.NODE_ENV === 'production' ) {
         res.sendFile( path.resolve( __dirname, 'client/build' ) )
     } )
 }
+
+const allRouter = require( './routes/all' );
+const entertainmentRouter = require( './routes/entertainment' );
+const museumsRouter = require( './routes/museums' );
+const nightlifeRouter = require( './routes/nightlife' );
+const shoppingRouter = require( './routes/shopping' );
+const sportsRouter = require( './routes/sports' );
+
+app.use( 'all', allRouter );
+app.use( 'entertainment', entertainmentRouter );
+app.use( 'museums', museumsRouter );
+app.use( 'nightlife', nightlifelRouter );
+app.use( 'all', all.shoppingRouter );
+app.use( 'sports', sportsRouter );
+
+
 
 app.listen( port, () => {                   // starts the server | begins listening to the aforementioned port 5001
     console.log( `Server is running on port: ${port}` );
