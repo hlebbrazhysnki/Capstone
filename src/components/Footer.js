@@ -7,9 +7,11 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
+import '../style.css'
   
 const Footer = () => {
   return (
+    <div id='footer'>
     <Box>
       <h1 style={{ color: "black", 
                    textAlign: "center", 
@@ -50,7 +52,7 @@ const Footer = () => {
         &copy;{new Date().getFullYear()} All Rights Reserved
       </Container>
     </Box>
-    
+    </div>
   );
 };
 export default Footer;

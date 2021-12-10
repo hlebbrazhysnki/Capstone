@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import "../App.css";
+import Home from './Home';
+import { BrowserRouter, Route, Switch, Link, withRouter } from "react-router-dom"
+import '../style.css'
 
 function Navbar() {
    
@@ -9,23 +12,36 @@ function Navbar() {
         <div className="Navbar">
             <div className="leftSide">
                 <div className="rightSide">
-
+<div className="lg-display">
                     <div className="Links">
                         <ul className=''>
-                            <a href="/home" className='Text-white'>Home</a>
-                            <a href="/attractions" className='Text-white'>Attractions</a>
-                            <a href="/contact" className='Text-white'>Contact</a>
-                            <a href="/about" className='Text-white'>About Us</a>
-
+                            <Link to='/' className='Text-white' target='_top'>Home</Link>
+                            <Link to ="/attractions" className='Text-white' target='_top'>Attractions</Link>
+                            <Link to ="/contact" className='Text-white' target='_top'>Contact</Link>
+                            <Link to ="/about" className='Text-white' target='_top'>About Us</Link>
+                            
                         </ul>
-
-                        
-                    
+                        </div>
                     </div>
+
+
+<div className="sm-display">
+<i class="fas fa-bars"></i>                       
+</div>  
+
+                    
                 </div>
+
+              
             </div>
+
+<div className="search-bar">
+<input type="text" />
+<button btn btn-primary>Go!</button>
+
+</div>              
         </div>
     )
 }
 
-export default Navbar
+export default withRouter(Navbar)
