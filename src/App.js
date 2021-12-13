@@ -8,6 +8,7 @@ import About from './components/About'
 import Home from './components/Home'
 
 
+
 class App extends Component {
   render() {
     return (
@@ -18,7 +19,7 @@ class App extends Component {
         <Route path='/about' component={About} />
         {/* <Route path='/contact' component={ Contact } /> */}
        </Switch>
-        <Footer/>
+      
         
      </BrowserRouter>
     

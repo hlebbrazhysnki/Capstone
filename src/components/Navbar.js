@@ -1,12 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import "../App.css";
 
+
+
+
+
+
+
+
 function Navbar() {
-   
+
+    
+
     return (
 
-        
-        <div className="Navbar">
+
+       
+        <div className="Navbar active">
             <div className="leftSide">
                 <div className="rightSide">
 
@@ -25,6 +35,11 @@ function Navbar() {
                 </div>
             </div>
         </div>
+       
+
+        
+        
+        
     )
 }
 
