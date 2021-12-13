@@ -17,7 +17,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Column>
-            <Heading>Capstone Project.</Heading>
+            <Heading>Capstone Project</Heading>
             <a class="text-white">This project was created by a team of students from Kable Academy's Web Development Bootcamp.</a>
           </Column>
           <Column>
@@ -34,7 +34,7 @@ const Footer = () => {
           </Column>
           <Column>
 
-            <Heading>Jonathan Hill</Heading>
+            <Heading id='Jonny'>Jonathan Hill</Heading>
             <FooterLink href="https://www.linkedin.com/in/jonathan-hill-202997221/">LinkedIn</FooterLink>
             <FooterLink href="https://github.com/JonathanHill513">GitHub</FooterLink>
             
@@ -42,7 +42,7 @@ const Footer = () => {
           
         </Row>
 
-        <a class="rights">&copy;{new Date().getFullYear()}  Capstone. All Rights Reserved.</a> 
+        
       </Container>
     </Box>
     </div>

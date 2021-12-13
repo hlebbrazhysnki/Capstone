@@ -17,7 +17,9 @@ body {
   display: flex;
 
 }
-
+#jonny{
+  height: 72px;
+}
 .Navbar .leftSide {
   flex: 50%;
   display: flex;
@@ -53,6 +55,6 @@ margin-left: 15px;
   
 }
 
-.rights{
+.search-bar{
   
 }

@@ -45,9 +45,10 @@ function Navbar() {
               
             </div>
 
+ 
 <div className="search-bar">
 <input type="text" />
-<button btn btn-primary>Go!</button>
+<button btn btn-primary> Go!</button>
 
 </div>              
         </div>

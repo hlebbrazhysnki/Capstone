@@ -18,11 +18,11 @@ export const Box = styled.div`
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     max-width: 1000px;
     margin: 0 auto;
     
-`
+`;
    
 export const Column = styled.div`
   display: flex;
@@ -59,5 +59,7 @@ export const Heading = styled.p`
   font-size: 24px;
   color: white;
   margin-bottom: 40px;
+  display:flex;
+  height:55px;
   font-weight: bold;
 `;
