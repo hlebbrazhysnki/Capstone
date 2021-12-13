@@ -7,9 +7,11 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
+import '../style.css'
   
 const Footer = () => {
   return (
+    <div id='footer'>
     <Box>
      
       <Container>
@@ -43,7 +45,7 @@ const Footer = () => {
         <a class="rights">&copy;{new Date().getFullYear()}  Capstone. All Rights Reserved.</a> 
       </Container>
     </Box>
-    
+    </div>
   );
 };
 export default Footer;
