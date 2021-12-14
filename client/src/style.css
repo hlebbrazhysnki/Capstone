@@ -1,0 +1,285 @@
+:root{
+    --c1:white;
+    --c2:#ccc;
+}
+
+
+body{
+    background-image: url("./imgs/cincy.jpg");
+    background-position:center;
+    background-size:2600px;
+    background-attachment: fixed;
+}
+
+.container{
+
+    border:1px black solid;
+    padding: 20px;
+    float:left;
+    border-radius: 10px;
+    text-align: center;
+    background: var(--c1);
+  }
+
+.big-container{
+    background-color: var(--c1);
+    border:1px black solid;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin:-500px 100px 0px !important;
+  }
+.card-buttons{
+    margin:0px 100px !important;    
+}
+.card-buttons button{
+    width:50%;
+    margin-top: 1px;
+}
+.category-title{
+    text-align: center;
+}
+
+.category-img{
+    width: 100%;
+    border:1px black solid;
+    border-radius: 10px;
+}
+.big-container img{
+    margin:0px 5px;
+    width: 100%;
+    max-height: 500px;
+}
+
+.categories{
+margin:550px 10px 0px 10px;
+}
+.content{
+margin:550px 300px 200px 300px;
+max-width: 1200px;
+}
+.center{
+    text-align: center;
+}
+.title{
+    background-color: var(--c1);
+    border: black 2px solid;
+    border-radius: 10px;
+}
+.topic{
+    text-align: center;
+    background-color:var(--c1);
+    padding: 5px 10px;
+    margin:0px 300px;
+    border-radius: 25px;
+}
+.contact-form{
+float:none;
+}
+.contact-form input{
+    margin: 0px 50px;
+}
+.text-box{
+    background: var(--c1);
+    float:left;
+    padding:10px;
+    margin: 0px 20px 10px;
+    border: 1px black solid;
+}
+.big-text-box{
+    float:left;
+    background: var(--c1);
+    margin:20px;
+    border: 1px black solid;
+    width:50%;
+    padding:10px;
+}
+.t-box{
+    margin:20px;
+    padding:10px;
+    color:var(--c1);
+    text-shadow: 1px 1px black;
+    background:radial-gradient(transparent,var(--c2));
+    background:transparent !important;
+}
+.t-box hr{
+background-color:var(--c1);
+}
+/* this is used for the image in About Us */
+.about-right{
+    float:right;
+    margin-right: 150px;
+    width:30%;
+}
+#video1{
+    margin:0px 50px;
+    float: left;
+    max-width: 560px;
+}
+#video-txt{
+    background: var(--c1);
+    width:auto;
+    padding: 10px;
+}
+#video2{
+    margin:0px 50px;
+    float: right;
+    max-width: 560px;
+}
+.videos{
+    margin:70px 131px 0px;
+    float: left;
+}
+#sm-display{
+    display:none;
+    margin-right: 0px;
+}
+
+/* Mobile compatability for About Page*/
+@media(max-width:1581px){
+    .t-box{
+        margin:20px;
+        padding:10px;
+        color:var(--c1);
+        text-shadow: 1px 1px black;
+        background:radial-gradient(transparent,var(--c2));
+        background:transparent !important;
+    }
+    .t-box hr{
+    background-color:var(--c1);
+    }
+    /* this is used for the image in About Us */
+    .about-right{
+        float:right;
+        margin-right: 150px;
+        width:30%;
+    }
+    #video1{
+        float: left;
+        max-width: 560px;
+    }
+    #video-txt{
+        background: var(--c1);
+        width:auto;
+        padding: 10px;
+    }
+    #video2{
+        /* float: right; */
+        max-width: 560px;
+    }
+    .videos{
+        margin:70px 10px 0px;
+        float: left;
+    }
+}
+
+
+@media(max-width:669px){
+    .t-box{
+        margin:10px;
+        padding:10px;
+        color:var(--c1);
+        text-shadow: 1px 1px black;
+        background:radial-gradient(transparent,var(--c2));
+        background:transparent !important;
+    }
+    .t-box hr{
+    background-color:var(--c1);
+    }
+    .big-text-box{
+        margin:0px 2px;
+        width:100%;
+    }
+    /* this is used for the image in About Us */
+    .about-right{
+        float:none;
+        margin: 0px 180px;
+        width:40%;
+    }
+    #video1{
+        float: left;
+        position: relative;
+    }
+    #video1 iframe{
+        width:100%
+    }
+    #video-txt{
+        background: var(--c1);
+        width:auto;
+        padding: 10px;
+    }
+    #video2{
+        float: left;
+        position: relative;
+    }
+    #video2 iframe{
+        width:100%
+    }
+    .videos{
+        /* margin:70px 10px 0px; */
+        float: none;
+        width:auto !important
+    }
+    .text-area{
+        margin:0px 0px;
+    }
+}
+/*End of Mobile compatability for about*/
+
+
+
+/* @media(max-width:1440px){
+    .big-container{
+        background-color: tan;
+        border:1px black solid;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin:-500px 20px 0px !important;
+      }
+} */
+
+@media(max-width:1252px){
+      .content{
+        margin:550px 150px 200px;
+      }
+}
+@media(max-width:900px){
+      .content{
+        margin:550px 30px 200px;
+      }
+      .topic{
+        padding: 5px 10px;
+        margin:0px 180px
+    }
+}
+@media(max-width:744px){
+.right{
+margin-right: 0px;
+display: flex;
+margin:0px 100px
+}
+}
+
+@media (max-width:584px){
+    .card-buttons button{
+        width:auto;
+    }
+    .content{
+     margin:550px 0px 200px 0px;
+    }
+    .big-container{
+        border:1px black solid;
+        padding: 20px;  
+        border-radius: 10px;
+        text-align: center;
+        margin:-500px 25px 0px !important;
+      }
+
+}
+@media(max-width:513px){
+    .topic{
+        padding: 5px 10px;
+        margin:0px 2px
+    }
+}
