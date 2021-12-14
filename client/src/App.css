@@ -9,14 +9,17 @@ body {
 }
 
 .Navbar {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(101, 67, 33);
+  background: transparent;
   width: 100%;
-  height: 80px;
+  height: 65px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
 
 }
-
+#jonny{
+  height: 72px;
+}
 .Navbar .leftSide {
   flex: 50%;
   display: flex;
@@ -33,9 +36,13 @@ body {
 
 .Navbar .leftSide .Links a {
 text-decoration: none;
-color: black; 
+color: white; 
 font-size: 25px;
 margin-left: 15px;
+}
+
+.Navbar.active{
+  background: linear-gradient( 90deg, rgb(101, 67, 33) 0%, rgb(101, 67, 33) 100%);
 }
 
 
@@ -44,36 +51,10 @@ margin-left: 15px;
 }
 
 .Navbar .leftSide .Text-white:hover {
-  color: lightskyblue
+  color: lightskyblue;
+  
 }
 
-:root {
-  --mainGoldenYellow: rgba(246, 246, 208);
-  --mainGrey: rgba(109, 109, 109);
-  --mainSkyBlue: rgba(135, 207, 251);
-  --mainBlack: rgba(0, 0, 0);;
-  --mainBlue: #007bff;
-
+.search-bar{
+  
 }
-
-.footer-middle {
-  background: var(--mainGoldenYellow);
-  padding-top: 3rem;
-  color: var(--mainBlack);
-}
-
-.footer-bottom {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-}
-
-ul li a {
-  color: var(--MainBlack);
-
-}
-
-ul li a:hover {
-  color: var(--mainSkyBlue);
-}
-
-

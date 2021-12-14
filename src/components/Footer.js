@@ -13,43 +13,36 @@ const Footer = () => {
   return (
     <div id='footer'>
     <Box>
-      <h1 style={{ color: "black", 
-                   textAlign: "center", 
-                   marginTop: "-50px" }}>
-                   test
-        
-      </h1>
+     
       <Container>
         <Row>
           <Column>
-            <Heading>Lorem, ipsum.</Heading>
-            <a>Lorem, ipsum.</a>
-            <a>Lorem, ipsum.</a>
-            <a>Lorem, ipsum.</a>
+            <Heading>Capstone Project</Heading>
+            <a class="text-white">This project was created by a team of students from Kable Academy's Web Development Bootcamp.</a>
           </Column>
           <Column>
-            <Heading>Lorem, ipsum.</Heading>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
+            <Heading>Michael Wilson II</Heading>
+            <FooterLink href="https://www.linkedin.com/in/michael-w-05299340/">LinkedIn</FooterLink>
+            <FooterLink href="https://github.com/MikeD-Wil">GitHub</FooterLink>
+            
           </Column>
           <Column>
-            <Heading>Lorem, ipsum.</Heading>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
+            <Heading>Gleb Brazhynski</Heading>
+            <FooterLink href="https://www.linkedin.com/in/hleb-brazhynski-406a49219/">LinkedIn</FooterLink>
+            <FooterLink href="https://github.com/hlebbrazhysnki">GitHub</FooterLink>
+            
           </Column>
           <Column>
-            <Heading>Lorem, ipsum.</Heading>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
-            <FooterLink href="#">Lorem, ipsum.</FooterLink>
+
+            <Heading id='Jonny'>Jonathan Hill</Heading>
+            <FooterLink href="https://www.linkedin.com/in/jonathan-hill-202997221/">LinkedIn</FooterLink>
+            <FooterLink href="https://github.com/JonathanHill513">GitHub</FooterLink>
+            
           </Column>
+          
         </Row>
-        &copy;{new Date().getFullYear()} All Rights Reserved
+
+        
       </Container>
     </Box>
     </div>
