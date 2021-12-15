@@ -2,7 +2,7 @@ import styled from 'styled-components';
    
 export const Box = styled.div`
   padding: 20px 20px;
-  background: rgb(101, 67, 33);
+  background: black;
   position:scroll;
   left:0px;
   right:0px;
