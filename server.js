@@ -27,11 +27,13 @@ const shoppingRouter = require( './routes/shopping' );
 const entertainmentRouter = require( './routes/entertainment' )
 const artRouter = require( './routes/art'); 
 const diningRouter = require( './routes/dining' );
+const attractionsRouter = require( './routes/attractions' );
 
 
 // const contactRouter = require( './routes/contact' )
 
 app.use( '/sports', sportRouter );
+app.use( '/attractions', attractionsRouter );
 app.use( '/nightlife', nightlifeRouter );
 app.use( '/shopping', shoppingRouter );
 app.use( '/entertainment', entertainmentRouter );

@@ -2,7 +2,9 @@
     --c1:white;
     --c2:#ccc;
 }
-
+html, body{
+    height: 100%;
+}
 
 body{
     background-image: url("./imgs/cincy.jpg");
