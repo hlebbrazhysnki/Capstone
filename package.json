@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/hlebbrazhysnki/Capstone/issues"
   },
-  "homepage": "https://github.com/hlebbrazhysnki/Capstone#readme"
+  "homepage": "https://github.com/hlebbrazhysnki/Capstone#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.1"
+  }
 }

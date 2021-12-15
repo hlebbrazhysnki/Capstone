@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom';
+
 import "../App.css";
 
 function Navbar() {
@@ -12,11 +14,11 @@ function Navbar() {
 
                     <div className="Links">
                         <ul className=''>
-                            <a href="/home" className='Text-white'>Home</a>
-                            <a href="/attractions" className='Text-white'>Attractions</a>
-                            <a href="/contact" className='Text-white'>Contact</a>
-                            <a href="/about" className='Text-white'>About Us</a>
-                            <a href="/sports" className='Text-white'>About Us</a>
+                            <Link to="/" className='Text-white'>Home</Link>
+                            <Link to="/attractions" className='Text-white'>Attractions</Link>
+                            <Link to="/contact" className='Text-white'>Contact</Link>
+                            <Link to="/about" className='Text-white'>About Us</Link>
+                            <Link to="/sports" className='Text-white'>About Us</Link>
 
                         </ul>
 

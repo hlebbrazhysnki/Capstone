@@ -3,10 +3,11 @@ import styled from 'styled-components';
 export const Box = styled.div`
   padding: 20px 20px;
   background: rgb(101, 67, 33);
-  position: fixed;
+  position:scroll;
   left:0px;
   right:0px;
   bottom: 0px;
+  height:20%;
   width: 100%;
   margin-top: auto;
    
