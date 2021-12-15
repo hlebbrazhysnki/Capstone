@@ -31,6 +31,7 @@ export default class Attractions extends Component {
             loading: true
         };
     }
+    // comment
     componentDidMount() {
         axios.get(BACKEND_URL + 'attractions/')
         .then(response => {
