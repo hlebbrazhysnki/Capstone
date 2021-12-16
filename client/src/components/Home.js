@@ -46,7 +46,7 @@ const Home = () => {
 
       <div className="container col-lg-4 col-md-3 col-sm-6 col-xs-4">
         <h2 className="category-title">Sights</h2>
-        <Link to='/attractions'><img className="category-img" src={sights}/></Link>
+        <Link to='/sights'><img className="category-img" src={sights}/></Link>
       </div>
 
 </div>
