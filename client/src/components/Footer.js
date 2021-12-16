@@ -18,7 +18,7 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>Capstone Project</Heading>
-            <a class="text-white">This project was created by a team of students from Kable Academy's Web Development Bootcamp.</a>
+            <a className="text-white">This project was created by a team of students from Kable Academy's Web Development Bootcamp.</a>
           </Column>
           <Column>
             <Heading>Michael Wilson II</Heading>
