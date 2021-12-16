@@ -1,12 +1,8 @@
 import styled from 'styled-components';
 export const Box = styled.div`
-  padding: 20px 20px;
-  background: black;
-  position:scroll;
-  left:0px;
-  right:0px;
-  bottom: 0px;
-  height:20%;
+  padding: 80px 60px;
+  background: linear-gradient(45deg,var(--c3), var(--c4)) !important;
+  bottom: 0;
   width: 100%;
   @media (max-width: 1000px) {
     padding: 70px 30px;

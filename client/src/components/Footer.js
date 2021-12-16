@@ -39,7 +39,6 @@ const Footer = () => {
           </Column>
         </Row>
       </Container>
-      ©2021 Capstone. All Rights Reserved.
     </Box>
     </div>
   );
