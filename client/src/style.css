@@ -1,7 +1,7 @@
 :root{
     --c1:white;
     --c2:#ccc;
-    --c3:hsl(310, 79%, 13%);
+    --c3:#3b0732;
     --c4:#17172e;
     --c5:#37377c;
     --c6:#805578;
@@ -14,12 +14,10 @@ html{
 .lg-display{
 display: block;
 }
-
 .sm-display{
 display: none;
 padding: 10px;
 }
-
 .Navbar{
     position: fixed;
     z-index: 999;
@@ -48,7 +46,6 @@ padding: 10px;
 #top-padding{
 margin-top: 80px;
 }
-
 .Links{
     float:left
 }
@@ -66,26 +63,19 @@ margin-top: 80px;
     float:right;
     border-radius: 10px;
     margin-right:70px;
-    
 }
 .search-bar input{
     margin-top:28px;
     border-radius: 5px;
-    
 }
-
 .footer{
     float: left;
     width:100%;
     margin-top:30px;
     /* the background-color below does not matter, the background of the footer can only be changed if you do it in the FooterStyles.js file! */
     background-color:linear-gradient(45deg,var(--c3), var(--c4)) !important;
-
     color:white;
-
 }
-
-
 @media(max-width:800px){
 .lg-display{
     display: none;
@@ -97,13 +87,11 @@ margin-top: 80px;
     float:right;
     border-radius: 25px;
     margin-right:25px;
-    
 }
 .search-bar button{
     /* float:left; */
     /* border-radius: 25px; */
     /* margin-right:30px; */
-    
 }
 }
 @media(max-width:548px){
@@ -117,20 +105,15 @@ margin-top: 80px;
     float:right;
     border-radius: 25px;
     margin-right:25px;
-    
 }
 .search-bar input{
     width:80px;
-    
 }
 .search-bar button{
     position: relative;
 }
 }
 /*------------------------------------------------*/
-
-
-
 body{
     background-image: url("./imgs/cincy.jpg");
     background-position:center;
@@ -141,16 +124,14 @@ body{
 .body{
     width:100%
 }
-
 .container{
-
     border:1px black solid;
     padding: 1px;
     float:left;
     border-radius: 10px;
     text-align: center;
     background: linear-gradient(90deg,var(--c1),var(--c2));
-  } 
+  }
 .big-container{
     background-color: var(--c1);
     border:1px black solid;
@@ -170,9 +151,6 @@ body{
     text-align: center;
     text-shadow: grey 1px 1px;
 }
-
-
-
 /*For fancy fade pictures in home page*/
 .category-img{
     width: 100%;
@@ -180,7 +158,6 @@ body{
     border-radius: 10px;
     filter: saturate(99%);
 }
-
 .topic-text{
     margin-top:120px;
     color: var(--c1);
@@ -191,17 +168,12 @@ body{
 .topic-text a:hover{
     text-decoration: none !important;
 }
-
-
-
-
 .alt:hover{
     /* opacity:0%; */
     animation-name:pic-fade;
     animation-duration: .5s;
     animation-fill-mode:forwards;
 }
-
 @keyframes pic-fade{
     0% {filter: saturate(80%);}
     100%{filter: saturate(150%);}
@@ -212,20 +184,12 @@ body{
     animation-duration: 1000ms;
     animation-fill-mode:forwards;
 }
-
 /*End of fancy pics*/
-
-
-
-
-
-
 .big-container img{
     margin:0px 5px;
     width: 100%;
     max-height: 500px;
 }
-
 .categories{
 margin:50px 10px 0px 10px;
 }
@@ -311,10 +275,8 @@ background-color:var(--c1);
     display:none;
     margin-right: 0px;
 }
-
 /* Mobile compatability for About Page*/
 @media(max-width:1581px){
-
     .t-box hr{
     background-color:var(--c1);
     }
@@ -342,10 +304,7 @@ background-color:var(--c1);
         float: left;
     }
 }
-
-
 @media(max-width:669px){
-
     .t-box hr{
     background-color:var(--c1);
     }
@@ -388,9 +347,7 @@ background-color:var(--c1);
         margin:0px 0px;
     }
 }
-
 @media(max-width:532px){
-
     .t-box hr{
     background-color:var(--c1);
     }
@@ -433,9 +390,6 @@ background-color:var(--c1);
     }
 }
 /*End of Mobile compatability for about*/
-
-
-
 /* @media(max-width:1440px){
     .big-container{
         background-color: tan;
@@ -446,7 +400,6 @@ background-color:var(--c1);
         margin:-500px 20px 0px !important;
       }
 } */
-
 @media(max-width:1252px){
       .content{
         margin:550px 150px 200px;
@@ -468,7 +421,6 @@ display: flex;
 margin:0px 100px
 }
 }
-
 @media (max-width:584px){
     .card-buttons button{
         width:auto;
@@ -483,7 +435,6 @@ margin:0px 100px
         text-align: center;
         margin:-500px 25px 0px !important;
       }
-
 }
 @media(max-width:513px){
     .topic{
@@ -491,5 +442,6 @@ margin:0px 100px
         margin:0px 2px
     }
 }
+
 
 
