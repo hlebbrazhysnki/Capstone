@@ -11,9 +11,16 @@ import '../style.css'
   
 const Footer = () => {
   return (
-    <div id='footer'>
+    
+    <div className='footer'>
     <Box>
-     
+    
+      <h1 style={{ color: "white", 
+                   textAlign: "center", 
+                   marginTop: "-50px" }}>
+                   test
+        
+      </h1>
       <Container>
         <Row>
           <Column>
