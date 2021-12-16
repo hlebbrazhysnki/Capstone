@@ -27,10 +27,10 @@ const shoppingRouter = require( './routes/shopping' );
 const entertainmentRouter = require( './routes/entertainment' )
 const artRouter = require( './routes/art'); 
 const diningRouter = require( './routes/dining' );
-const attractionsRouter = require( './routes/attractions' );
+const attractionsRouter = require( './routes/contact' );
 
 
-// const contactRouter = require( './routes/contact' )
+const contactRouter = require( './routes/contact' )
 
 app.use( '/sports', sportRouter );
 app.use( '/attractions', attractionsRouter );
@@ -39,7 +39,7 @@ app.use( '/shopping', shoppingRouter );
 app.use( '/entertainment', entertainmentRouter );
 app.use( '/art', artRouter );
 app.use( '/dining', diningRouter );
-// app.use( '/contact', contactRouter )
+app.use( '/contact', contactRouter )
 
 /* Production */
 if ( process.env.NODE_ENV === 'production' ) {
