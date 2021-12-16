@@ -1,73 +1,112 @@
-import React, { Component } from 'react'
-import axios from 'axios'
-import { Link } from 'react-router-dom'
-import { BACKEND_URL } from '../config'
-const Contact = ( props ) => {
+import React, { Component } from 'react';
+import axios from 'axios';
+import {BACKEND_URL} from '../config'
+
+export default class Contact extends Component {
+  constructor (props){
+    super(props)
+    this.onChangeName = this.onChangeName.bind(this);
+    this.onChangeEmail = this.onChangeEmail.bind(this);
+    this.onChangeQuestion = this.onChangeQuestion.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+    this.state = {
+        name: " ",
+        email: " ",
+        comment: " ",
+      }
+    }
+
+  onChangeName(e){
+    this.setState({
+      name: e.target.value
+    })
+  }
+  onChangeEmail(e){
+    this.setState({
+      email: e.target.value
+    })
+  }
+  onChangeQuestion(e){
+    this.setState({
+      comment: e.target.value
+    })
+  }
+  onSubmit(e){
+    e.preventDefault();
+    const contact ={
+      name: this.state.name,
+      email: this.state.email,
+      comment: this.state.comment,
+    }
+    console.log(contact)
+    axios.post(BACKEND_URL + 'contact/add', contact)
+    .then(res=>console.log(res.data));
+    // window.location="/"
+    this.props.history.push('/');
+    
+    this.setState({
+        name: '',
+        email: '',
+        comment: ''
+    })
+    window.alert('Thank you for your inquiry')
+    console.log(contact)
+  }
+  render() {
     return (
-        <div className='allContacts'>
-            <div className='contactsCard'>
-                <div className='cardImage'>
-                    <img className='contactImage' src={props.contact.imageURL} alt='contact pictuuuuure' />
-                </div>
-                <div>
-                    <div className='text-name'>{props.contact.name}</div>
-                    <div className='text-link'>
-                        <Link className='link-details' Link to={"contacts/" + props.contact._id}>Details</Link>
-                    </div>
-                    <div className='website'>
-                        <a className='link-site' href={props.contact.website} target="_blank" rel="noreferrer">Website</a>
-                    </div>
-                </div>
+      <div>
+      <div className="contactContainerReturn">
+          <h3 className='text-center'>Contact Us</h3>
+          <div className="containerContact">
+            <div className="contentContact">
+            <form id='contact-form' onSubmit={this.onSubmit}>
+              <div className="form-group">
+                <label className="contact-label">Name: </label>
+                <input
+                  type="text"
+                  required
+                  className="form-control"
+                  value={this.state.name}
+                  onChange={this.onChangeName}
+                  >
+                  </input>
+              </div>
+              <div className="form-group">
+                  <label className="contact-label">Email:</label>
+                  <input
+                  type="email"
+                  required
+                  className="form-control"
+                  value={this.state.email}
+                  onChange={this.onChangeEmail}
+                  >
+                  </input>
+              </div>
+              <div className="form-group">
+                <label className="contact-label">Questions and Comments:</label>
+                  <textarea
+                  type="text"
+                  className="form-control"
+                  value={this.state.comment}
+                  onChange={this.onChangeQuestion}
+                  rows='6'
+                  >
+                  </textarea>
+              </div>
+              <div className="form-group">
+                  <input
+                  type="submit"
+                  value="Send"
+                  className="btn btn-contact"
+                  />
+              </div>
+            </form>
             </div>
-        </div>
+            <div className="content">
+            </div>
+          </div>
+      </div>
+      </div>
     )
-}
-
-export default class Contacts extends Component {
-    constructor( props ) {
-        super( props )
-        this.state = {
-            contact: [],
-            loading: true
-        };
-    }
-    // comment
-    componentDidMount() {
-        axios.get( BACKEND_URL + 'contacts/' )
-            .then( response => {
-                this.setState( {
-                    contacts: response.data,
-                    loading: false
-                } )
-                console.log( 'this is the list of contacts' )
-            } )
-            .catch( ( error ) => {
-                console.log( error )
-            } );
-    }
-    contactsList() {
-        return this.state.contacts.map( ( currentContact ) => {
-            return <Contact contact={currentContact} key={currentContact._id} />
-        } )
-    }
-
-    render() {
-        return (
-            this.state.loading === false ? (
-                <div className='row'>
-                    <div className='contactsContainer'>
-                        <h2 className='contactsHeader'>Contacts</h2>
-                        <div className='contactsInnerContainer'>
-                            {this.contactsList()}
-                        </div>
-                    </div>
-
-                </div>
-            ) : (
-                <div>
-                    <h1 className="loading-spinner">Loading...</h1>
-                </div>
-            )
-        )
-    }
+  }
 }
