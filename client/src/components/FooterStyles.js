@@ -2,7 +2,7 @@ import styled from 'styled-components';
    
 export const Box = styled.div`
   padding: 80px 60px;
-  background: linear-gradient(45deg,var(--c3), var(--c4)) !important;;
+  background: linear-gradient(45deg,var(--c3), var(--c4)) !important;
 
   bottom: 0;
   width: 100%;
