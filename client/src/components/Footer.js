@@ -20,7 +20,7 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>Capstone Project</Heading>
-            <a class="text-white">This project was created by a team of students from Kable Academy's Web Development Bootcamp.</a>
+            <a class="text-white">This project was created by a team of students from <FooterLink href="https://kableacademy.com/">Kable Academy's </FooterLink> Web Development Bootcamp. </a>
           </Column>
           <Column>
             <Heading>Michael Wilson II</Heading>
@@ -39,6 +39,7 @@ const Footer = () => {
           </Column>
         </Row>
       </Container>
+      ©2021 Capstone. All Rights Reserved.
     </Box>
     </div>
   );

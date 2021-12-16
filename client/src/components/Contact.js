@@ -54,14 +54,13 @@ export default class Contact extends Component {
   }
   render() {
     return (
-      <div>
-      <div className="contactContainerReturn">
-          <h3 className='text-center'>Contact Us</h3>
-          <div className="containerContact">
-            <div className="contentContact">
+      <div className="container mx-auto" id='contactContainer'>
+          <h3 className='text-center text-white'>Contact Us</h3>
+          <div className="mx-auto">
+            <div className="">
             <form id='contact-form' onSubmit={this.onSubmit}>
               <div className="form-group">
-                <label className="contact-label">Name: </label>
+                <label className="contact-label text-white">Name:</label>
                 <input
                   type="text"
                   required
@@ -72,7 +71,7 @@ export default class Contact extends Component {
                   </input>
               </div>
               <div className="form-group">
-                  <label className="contact-label">Email:</label>
+                  <label className="contact-label text-white">Email:</label>
                   <input
                   type="email"
                   required
@@ -83,7 +82,7 @@ export default class Contact extends Component {
                   </input>
               </div>
               <div className="form-group">
-                <label className="contact-label">Questions and Comments:</label>
+                <label className="contact-label text-white">Questions and Comments:</label>
                   <textarea
                   type="text"
                   className="form-control"
@@ -93,19 +92,17 @@ export default class Contact extends Component {
                   >
                   </textarea>
               </div>
-              <div className="form-group">
+              <div className="form-group" >
                   <input
                   type="submit"
                   value="Send"
-                  className="btn btn-contact"
+                  className="btn btn-light" id="button"
                   />
               </div>
             </form>
             </div>
-            <div className="content">
-            </div>
+           
           </div>
-      </div>
       </div>
     )
   }
