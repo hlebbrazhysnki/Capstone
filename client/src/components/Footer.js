@@ -18,7 +18,7 @@ const Footer = () => {
       <h1 style={{ color: "white", 
                    textAlign: "center", 
                    marginTop: "-50px" }}>
-                   test
+                 
         
       </h1>
       <Container>

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 export const Box = styled.div`
+
 padding: 20px 20px;
-background: rgb(101, 67, 33);
+background: hsl(310, 79%, 13%);
 position:scroll;
 left:0px;
 right:0px;
@@ -12,6 +13,7 @@ margin-top: auto;
 @media (max-width: 1000px) {
   padding: 70px 30px;
 }
+
 `;
 export const Container = styled.div`
   display: flex;
@@ -51,6 +53,7 @@ font-size: 24px;
 color: white;
 margin-bottom: 40px;
 display:flex;
-height:55px;
+height:px;
 font-weight: bold;
 `;
+
