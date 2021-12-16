@@ -1,28 +1,137 @@
 :root{
     --c1:white;
     --c2:#ccc;
+    --c3:#3b0732;
+    --c4:#17172e;
+    --c5:#37377c;
+    --c6:#805578;
 }
-html, body{
-    height: 100%;
+html{
+    scroll-behavior: smooth;
+    width: 100%;
 }
-
+/* NAVBAR STUFF */
+.lg-display{
+display: block;
+}
+.sm-display{
+display: none;
+padding: 10px;
+}
+.Navbar{
+    position: fixed;
+    z-index: 999;
+    top:0;
+    background:linear-gradient(45deg,var(--c3), var(--c4)) !important;
+    color:white !important;
+    width: 100%;
+}
+.btn-custom{
+    background:transparent !important;
+}
+.btn-custom2{
+    background:var(--c3) !important;
+    color:white;
+    text-shadow: black 2px 2px;
+}
+.Text-white{
+    color:white !important;
+}
+.Text-white:hover{
+    color:var(--c5) !important;
+}
+.fa-bars{
+    color:white;
+}
+#top-padding{
+margin-top: 80px;
+}
+.Links{
+    float:left
+}
+.Links #hidden ul{
+    display:flex;
+    position:absolute;
+    left:0px;
+    top:80px;
+    height: 230px;
+    width:100%;
+    background:red;
+    align-items: center;
+}
+.search-bar{
+    float:right;
+    border-radius: 10px;
+    margin-right:70px;
+}
+.search-bar input{
+    margin-top:28px;
+    border-radius: 5px;
+}
+.footer{
+    float: left;
+    width:100%;
+    margin-top:30px;
+    /* the background-color below does not matter, the background of the footer can only be changed if you do it in the FooterStyles.js file! */
+    background-color:linear-gradient(45deg,var(--c3), var(--c4)) !important;
+    color:white;
+}
+@media(max-width:800px){
+.lg-display{
+    display: none;
+}
+.sm-display{
+    display:block;
+}
+.search-bar{
+    float:right;
+    border-radius: 25px;
+    margin-right:25px;
+}
+.search-bar button{
+    /* float:left; */
+    /* border-radius: 25px; */
+    /* margin-right:30px; */
+}
+}
+@media(max-width:548px){
+.lg-display{
+    display: none;
+}
+.sm-display{
+    display:block;
+}
+.search-bar{
+    float:right;
+    border-radius: 25px;
+    margin-right:25px;
+}
+.search-bar input{
+    width:80px;
+}
+.search-bar button{
+    position: relative;
+}
+}
+/*------------------------------------------------*/
 body{
     background-image: url("./imgs/cincy.jpg");
     background-position:center;
     background-size:2600px;
     background-attachment: fixed;
+    display: block;
 }
-
+.body{
+    width:100%
+}
 .container{
-
     border:1px black solid;
-    padding: 20px;
+    padding: 1px;
     float:left;
     border-radius: 10px;
     text-align: center;
-    background: var(--c1);
+    background: linear-gradient(90deg,var(--c1),var(--c2));
   }
-
 .big-container{
     background-color: var(--c1);
     border:1px black solid;
@@ -35,26 +144,54 @@ body{
     margin:0px 100px !important;    
 }
 .card-buttons button{
-    width:50%;
+    width:100%;
     margin-top: 1px;
 }
 .category-title{
     text-align: center;
+    text-shadow: grey 1px 1px;
 }
-
+/*For fancy fade pictures in home page*/
 .category-img{
     width: 100%;
     border:1px black solid;
     border-radius: 10px;
+    filter: saturate(99%);
 }
+.topic-text{
+    margin-top:120px;
+    color: var(--c1);
+    text-shadow: black 3px 1px;
+    size:45px !important;
+    text-decoration: none;
+}
+.topic-text a:hover{
+    text-decoration: none !important;
+}
+.alt:hover{
+    /* opacity:0%; */
+    animation-name:pic-fade;
+    animation-duration: .5s;
+    animation-fill-mode:forwards;
+}
+@keyframes pic-fade{
+    0% {filter: saturate(80%);}
+    100%{filter: saturate(150%);}
+}
+.category-img:hover{
+    /* opacity:0%; */
+    animation-name:pic-fade;
+    animation-duration: 1000ms;
+    animation-fill-mode:forwards;
+}
+/*End of fancy pics*/
 .big-container img{
     margin:0px 5px;
     width: 100%;
     max-height: 500px;
 }
-
 .categories{
-margin:550px 10px 0px 10px;
+margin:50px 10px 0px 10px;
 }
 .content{
 margin:550px 300px 200px 300px;
@@ -64,9 +201,10 @@ max-width: 1200px;
     text-align: center;
 }
 .title{
-    background-color: var(--c1);
-    border: black 2px solid;
-    border-radius: 10px;
+    background-color: transparent;
+    border-bottom: var(--c1) 1px solid;
+    color:var(--c1);
+    text-shadow: black 3px 3px;
 }
 .topic{
     text-align: center;
@@ -99,10 +237,11 @@ float:none;
 .t-box{
     margin:20px;
     padding:10px;
-    color:var(--c1);
-    text-shadow: 1px 1px black;
-    background:radial-gradient(transparent,var(--c2));
+    color:var(--c1) !important;
+    text-shadow: 2px 2px black !important;
     background:transparent !important;
+    size:20px !important;
+    border: transparent 1px solid !important;
 }
 .t-box hr{
 background-color:var(--c1);
@@ -136,17 +275,8 @@ background-color:var(--c1);
     display:none;
     margin-right: 0px;
 }
-
 /* Mobile compatability for About Page*/
 @media(max-width:1581px){
-    .t-box{
-        margin:20px;
-        padding:10px;
-        color:var(--c1);
-        text-shadow: 1px 1px black;
-        background:radial-gradient(transparent,var(--c2));
-        background:transparent !important;
-    }
     .t-box hr{
     background-color:var(--c1);
     }
@@ -174,17 +304,7 @@ background-color:var(--c1);
         float: left;
     }
 }
-
-
 @media(max-width:669px){
-    .t-box{
-        margin:10px;
-        padding:10px;
-        color:var(--c1);
-        text-shadow: 1px 1px black;
-        background:radial-gradient(transparent,var(--c2));
-        background:transparent !important;
-    }
     .t-box hr{
     background-color:var(--c1);
     }
@@ -195,7 +315,8 @@ background-color:var(--c1);
     /* this is used for the image in About Us */
     .about-right{
         float:none;
-        margin: 0px 180px;
+        margin-right:0px;
+        margin-left:170px;
         width:40%;
     }
     #video1{
@@ -226,10 +347,49 @@ background-color:var(--c1);
         margin:0px 0px;
     }
 }
+@media(max-width:532px){
+    .t-box hr{
+    background-color:var(--c1);
+    }
+    .big-text-box{
+        margin:0px 2px;
+        width:100%;
+    }
+    /* this is used for the image in About Us */
+    .about-right{
+        float:none;
+        margin-left:80px;
+        width:50%;
+    }
+    #video1{
+        float: left;
+        position: relative;
+    }
+    #video1 iframe{
+        width:100%
+    }
+    #video-txt{
+        background: var(--c1);
+        width:auto;
+        padding: 10px;
+    }
+    #video2{
+        float: left;
+        position: relative;
+    }
+    #video2 iframe{
+        width:100%
+    }
+    .videos{
+        /* margin:70px 10px 0px; */
+        float: none;
+        width:auto !important
+    }
+    .text-area{
+        margin:0px 0px;
+    }
+}
 /*End of Mobile compatability for about*/
-
-
-
 /* @media(max-width:1440px){
     .big-container{
         background-color: tan;
@@ -240,7 +400,6 @@ background-color:var(--c1);
         margin:-500px 20px 0px !important;
       }
 } */
-
 @media(max-width:1252px){
       .content{
         margin:550px 150px 200px;
@@ -262,7 +421,6 @@ display: flex;
 margin:0px 100px
 }
 }
-
 @media (max-width:584px){
     .card-buttons button{
         width:auto;
@@ -277,7 +435,6 @@ margin:0px 100px
         text-align: center;
         margin:-500px 25px 0px !important;
       }
-
 }
 @media(max-width:513px){
     .topic{
@@ -285,3 +442,6 @@ margin:0px 100px
         margin:0px 2px
     }
 }
+
+
+

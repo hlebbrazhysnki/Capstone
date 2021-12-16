@@ -30,6 +30,11 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+<<<<<<< HEAD
     "mongoose": "^6.1.2"
+=======
+    "mongoose": "^6.1.2",
+    "react-icons": "^4.3.1"
+>>>>>>> ed0f90c8e674a908de8a6636d42d260ea51327ab
   }
 }

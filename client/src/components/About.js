@@ -1,4 +1,4 @@
-import React from 'react'
+                import React from 'react'
 import { Placeholder } from 'react-bootstrap'
 import "../style.css";
 import placeholder from '../imgs/placeholder.png'
