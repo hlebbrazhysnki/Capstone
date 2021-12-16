@@ -1,15 +1,12 @@
 import styled from 'styled-components';
    
 export const Box = styled.div`
-  padding: 20px 20px;
-  background: rgb(101, 67, 33);
-  position:scroll;
-  left:0px;
-  right:0px;
-  bottom: 0px;
-  height:20%;
+  padding: 80px 60px;
+  background: linear-gradient(45deg,var(--c3), var(--c4)) !important;;
+
+  bottom: 0;
   width: 100%;
-  margin-top: auto;
+  
    
   @media (max-width: 1000px) {
     padding: 70px 30px;
@@ -19,11 +16,11 @@ export const Box = styled.div`
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
     
-`;
+`
    
 export const Column = styled.div`
   display: flex;
@@ -60,7 +57,5 @@ export const Heading = styled.p`
   font-size: 24px;
   color: white;
   margin-bottom: 40px;
-  display:flex;
-  height:55px;
   font-weight: bold;
 `;
