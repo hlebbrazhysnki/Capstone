@@ -23,7 +23,7 @@ const Footer = () => {
             <a class="text-white">This project was created by a team of students from <FooterLink href="https://kableacademy.com/">Kable Academy's </FooterLink> Web Development Bootcamp. </a>
           </Column>
           <Column>
-            <Heading>Michael Wilson II</Heading>
+            <Heading>Michael II Wilson </Heading>
             <FooterLink href="https://www.linkedin.com/in/michael-w-05299340/">LinkedIn</FooterLink>
             <FooterLink href="https://github.com/MikeD-Wil">GitHub</FooterLink>
           </Column>
