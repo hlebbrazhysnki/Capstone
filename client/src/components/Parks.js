@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { BACKEND_URL } from '../config'
-
-
-const Attraction = (props) => {
+const Attraction = ( props ) => {
     return (
         <div className='content'>
             <div className='big-container'>
@@ -36,45 +34,45 @@ const Attraction = (props) => {
     )
 }
 
-export default class art extends Component {
-    constructor(props) {
-        super(props)
+export default class dining extends Component {
+    constructor( props ) {
+        super( props )
         this.state = {
-            attraction:[],
+            attraction: [],
             loading: true
         };
     }
     // comment
     componentDidMount() {
-        axios.get(BACKEND_URL + 'art/')
-        .then(response => {
-            this.setState({
-                art: response.data,
-                loading: false
-            })
-            console.log('this is the list of art')
-        })
-        .catch((error) => {
-            console.log(error)
-        });
+        axios.get( BACKEND_URL + 'dining/' )
+            .then( response => {
+                this.setState( {
+                    dining: response.data,
+                    loading: false
+                } )
+                console.log( 'this is the list of dining' )
+            } )
+            .catch( ( error ) => {
+                console.log( error )
+            } );
     }
-    artList() {
-        return this.state.art.map((currentAttraction) => {
-            return <Attraction attraction = {currentAttraction} key={currentAttraction._id} />
-        })
+    diningList() {
+        return this.state.dining.map( ( currentAttraction ) => {
+            return <Attraction attraction={currentAttraction} key={currentAttraction._id} />
+        } )
     }
 
     render() {
         return (
             this.state.loading === false ? (
                 <div className='row'>
-                <div className='artContainer'>
-                    <h2 className='artHeader'>art</h2>
-                    <div className='artInnerContainer'>
-                        {this.artList()}
+                    <div className='diningContainer'>
+                        <h2 className='diningHeader'>dining</h2>
+                        <div className='diningInnerContainer'>
+                            {this.diningList()}
+                        </div>
                     </div>
-                </div>
-          
+
                 </div>
             ) : (
                 <div>
