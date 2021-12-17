@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Switch, Link, withRouter } from "react-router-dom
 
 
 
+
 const Home = () => {
     return (
         <div>
@@ -21,27 +22,27 @@ const Home = () => {
 <div className="categories center">
       <div className="container col-lg-4 col-md-3 col-sm-6 col-xs-4">
         <h2 className="category-title">Food</h2>
-        <Link to='/attractions'> <img className="category-img" src={food}/></Link>
+        <Link to='/food'> <img className="category-img" src={food}/></Link>
       </div>
 
       <div className="container col-lg-4 col-md-3 col-sm-6 col-xs-4">
         <h2 className="category-title">Parks</h2>
-        <Link to='/attractions'><img className="category-img" src={park}/></Link>
+        <Link to='/parks'><img className="category-img" src={park}/></Link>
       </div>
 
       <div className="container col-lg-4 col-md-3 col-sm-6 col-xs-4">
         <h2 className="category-title">Nightlife</h2>
-        <Link to='/attractions'><img className="category-img"  src={club}/></Link>
+        <Link to='/nightlife'><img className="category-img"  src={club}/></Link>
       </div>
 
       <div className="container col-lg-4 col-md-3 col-sm-6 col-xs-4">
         <h2 className="category-title">Shopping</h2>
-        <Link to='/attractions'><img id='shop' className="category-img" src={shop}/></Link>
+        <Link to='/shopping'><img id='shop' className="category-img" src={shop}/></Link>
       </div>
 
       <div className="container col-lg-4 col-md-3 col-sm-6 col-xs-4">
         <h2 className="category-title">Entertainment</h2>
-        <Link to='/attractions'><img className="category-img" src={arcade}/></Link>
+        <Link to='/entertainment'><img className="category-img" src={arcade}/></Link>
       </div>
 
       <div className="container col-lg-4 col-md-3 col-sm-6 col-xs-4">

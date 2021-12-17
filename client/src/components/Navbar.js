@@ -15,10 +15,10 @@ function Navbar() {
                     <div className="Links">
                         <ul className=''>
                             <Link to="/" className='Text-white'>Home</Link>
-                            <Link to="/attractions" className='Text-white'>Attractions</Link>
+                            <Link to="/" className='Text-white'>Attractions</Link>
                             <Link to="/contact" className='Text-white'>Contact</Link>
                             <Link to="/about" className='Text-white'>About Us</Link>
-                            <Link to="/sports" className='Text-white'>Sports</Link>
+                            <Link to="/sport" className='Text-white'>Sports</Link>
 
                         </ul>
 
